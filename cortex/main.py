@@ -15,7 +15,7 @@ __author_email__ = 'erroneus@gmail.com'
 
 logger = logging.getLogger('cortex')
 
-#定义 run 函数，接受一个名为 model 的参数，默认值为 None
+
 def run(model=None):
     '''Main function.
 
@@ -23,7 +23,7 @@ def run(model=None):
     # Parse the command-line arguments
 
     try:
-        #调用 setup_cortex 函数，并传递 model 参数。该函数负责解析命令行参数、设置环境变量和实例化模型。返回的 args 变量包含解析后的命令行参数。
+  
         args = setup_cortex(model=model)
         if args.command == 'setup':
             # Performs setup only.
